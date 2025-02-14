@@ -8,7 +8,9 @@
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         '''
-        Recursive DFS solution
+        Recursive DFS solution 
+        Time complexity: O(h) where h is the height of the tree
+        Space complexity: O(h) where h is the height of the tree
         '''
         # def dfs(node):
         #     if p.val<=node.val<=q.val or q.val<=node.val<=p.val:
@@ -21,6 +23,8 @@ class Solution:
 
         '''
         Iterative solution
+        Time complexity: O(h) where h is the height of the tree
+        Space complexity: O(1)
         '''
         while root:
             if p.val<root.val and q.val<root.val:
